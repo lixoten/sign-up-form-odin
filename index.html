@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Sign up form at The Odin Project</title>
+</head>
+<body>
+<main>
+    <div id="brand-side">
+        <div id="logo-area">
+            <img src="odin-lined.png" alt="">
+            Odin
+        </div>
+
+        <p id="credit">photo by Halie West at unsplash.com</p>
+    </div>
+    <div id="form-side">
+        <div>
+            <p>This is not a real online service! You know you need something like this in your life to help you
+                realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <form>
+            <fieldset>
+                <legend>Let's do this!t</legend>
+                <div class="input-square">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" required placeholder="Enter your first name">
+                </div>
+
+                <div class="input-square">
+                    <label for="last-name" class="required">Last Name</label>
+                    <input type="text" id="last-name" required placeholder="Enter your last name">
+                </div>
+
+                <div class="input-square">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required placeholder="john.doe@example.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">                </div>
+
+                <div class="input-square">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="818-867-5309">
+                </div>
+
+                <div class="input-square">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required placeholder="********" pattern="(?=.*[a-z]).{8,}" title="Must contain at least one lowercase letter, and at least 8 or more characters">
+                    <span id="pw-msg" class="error"></span>
+                </div>
+
+                <div class="input-square">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" required placeholder="********">
+                </div>
+                <button id="submit">Create Account</button>
+            </fieldset>
+
+             <span id="sign-in">Already have an account? <a href="#">Log in</a></span>
+        </form>
+    </div>
+</main>
+<script src="./script.js"></script>
+</body>
+</html>

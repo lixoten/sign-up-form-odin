@@ -1,0 +1,158 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('assets/Norse-Bold.otf') format('opentype');
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#logo-area,
+p{
+    font-family: 'Norse Bold',serif;
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+#brand-side {
+    background-image: url("assets/bg-platnts.avif");
+    background-size: cover;
+    width: calc(40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+#form-side {
+    width: calc(60%);
+
+    box-sizing: border-box;
+    align-self: center;
+}
+#form-side > div{
+    padding: 0 4rem;
+}
+
+#brand-side, #form-side {
+    flex: 1 1 auto;
+    min-width: 300px; 
+}
+#logo-area {
+    height: 20%;
+    padding: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    color: white;
+    font-size: 7em;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+#logo-area img {
+    height: 100%;
+    object-fit: contain;
+}
+
+form {
+    background-color: whitesmoke;
+    padding: 20px 40px;
+    box-shadow: 0 05px 5px 0  red;
+}
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    padding: 15px;
+
+}
+fieldset::after {
+    content: "";
+    width: 100%;
+    order: 1;
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+}
+
+.input-square {
+    display: block;
+    width: 300px;
+    padding: 15px 0;
+    min-width: 175px;
+}
+label {
+    text-transform: uppercase;
+    color: #808080;
+}
+input {
+    display: block;
+    border: 1px dotted rgba(37, 156, 2, 0.31);
+    border-radius: 4px;
+    padding: 4px;
+    font-weight: 500;
+    width: 80%;
+}
+input:required {
+    border-bottom: 2px solid red;
+}
+input:valid{
+    border-bottom: 2px solid green;
+}
+
+button {
+    display: block;
+    width: 200px;
+    order: 2;
+    padding: 10px;
+    background-color: #596D48;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    margin: 20px 0;
+}
+
+#sign-in {
+   font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: red;
+}
+
+#credit {
+    font-family: initial;
+    font-size: initial;
+    color: white;
+}
+
+@media (max-width: 530px) {
+    #brand-side {
+        height: 20%;
+    }
+    #logo-area {
+        height: 60%;
+        font-size: 3em;
+    }
+}
